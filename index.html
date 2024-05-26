@@ -6,138 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark" />
   <title>Hello Pico!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="pico-css/pico.fluid.classless.fuchsia.min.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <style>
-    .kanban-board {
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .kanban-board header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .kanban-board main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .column {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .card {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-      width: 300px;
-    }
-
-    .card h2 {
-      font-size: 18px;
-      margin-top: 0;
-    }
-
-    .column to-do-list li,
-    .column in-progress li,
-    .column done li {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-      margin-bottom: 10px;
-    }
-
-    .column to-do-list li:last-child,
-    .column in-progress li:last-child,
-    .column done li:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
   </style>
 </head>
 
 <body>
-  <!-- Container for the entire board  -->
-  <div class="container kanban-board">
-    <!-- Header section (optional)  -->
+  <main>
     <header>
-      <h1>Kanban Board</h1>
+      <h1>Our own kanban project…</h1>
     </header>
-
-    <!-- Main Content (columns)  -->
-    <main>
-      <section aria-label="To-Do List">
-        <ul class="column to-do-list">
-          <li>
-            <div class="card">
-              <h2>Task: Build a house</h2>
-              <p>Description: Construct a two-story house with a garage and backyard.</p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h2>Task: Create a new website</h2>
-              <p>Description: Design and develop a responsive, user-friendly website.</p>
-            </div>
-          </li>
-        </ul>
-
-      </section>
-
-      <section aria-label="In Progress">
-        <ul class="column in-progress">
-          <li>
-            <div class="card">
-              <h2>Task: Test the software</h2>
-              <p>Description: Conduct thorough testing and debugging of the software.</p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h2>Task: Implement new features</h2>
-              <p>Description: Add new functionalities to enhance the user experience.</p>
-            </div>
-          </li>
-        </ul>
-
-      </section>
-
-      <section aria-label="Done">
-        <ul class="column done">
-          <li>
-            <div class="card">
-              <h2>Task: Launch a marketing campaign</h2>
-              <p>Description: Develop and execute a comprehensive marketing strategy.</p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h2>Task: Complete a project report</h2>
-              <p>Description: Compile and submit a detailed project report.</p>
-            </div>
-          </li>
-        </ul>
-
-      </section>
-    </main>
-
-    <!-- Footer section (optional)  -->
-    <footer>
-      <p>&copy; [Year] [Your Name]</p>
-    </footer>
-  </div>
+    <section>
+      <h3>To Do</h3>
+      <article>
+        <h4>Build a house</h4>
+        <p>Construct a two-story house with a garage and backyard.</p>
+      </article>
+      <article>
+        <h4>Create a new website</h4>
+        <p>Design and develop a responsive, user-friendly website.</p>
+      </article>
+    </section>
+    <section>
+      <h3>Doing</h3>
+      <article>
+        <h4>Test the software</h4>
+        <p>Conduct thorough testing and debugging of the software.</p>
+      </article>
+      <article>
+        <h4>Implement new features</h4>
+        <p>Add new functionalities to enhance the user experience.</p>
+      </article>
+    </section>
+    <section>
+      <h3>Done</h3>
+      <article>
+        <h4>Launch a marketing campaign</h4>
+        <p>Develop and execute a comprehensive marketing strategy.</p>
+      </article>
+      <article>
+        <h4>Complete a project report</h4>
+        <p>Compile and submit a detailed project report.</p>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>
